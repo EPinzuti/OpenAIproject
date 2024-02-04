@@ -51,7 +51,7 @@ docs=loader.load()
 
 index=VectorstoreIndexCreator().from_loaders([loader]) 
 
-query=''
+query='Which frequency is analysed?'
 index.query(query)
 
 
