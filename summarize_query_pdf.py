@@ -11,31 +11,10 @@ import glob
 import openai
 
 
-#setx OPENAI_API_KEY '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'
-
-#openai.api_key=APIKEY
-
-#api_key='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'
-from openai import OpenAI
-
-
-client = OpenAI()
-
-completion = client.chat.completions.create(
-  model="gpt-3.5-turbo",
-  messages=[
-    {"role": "system", "content": "You are a poetic assistant, skilled in explaining complex programming concepts with creative flair."},
-    {"role": "user", "content": "Compose a poem that explains the concept of recursion in programming."}
-  ]
-)
-
-print(completion.choices[0].message)
 
 
 
-
-
-llm=  OpenAI(temperature=0.2)#(model="gpt-4"
+llm=  OpenAI(temperature=0.2)
 
 def summarize_pdfs_from_folder(pdfs_folder):
     
