@@ -11,11 +11,7 @@ import glob
 import openai
 
 
-#setx OPENAI_API_KEY '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'
 
-#openai.api_key=APIKEY
-
-#api_key='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'
 from openai import OpenAI
 
 
